@@ -14,7 +14,6 @@ app.post('/todos', (req, res) => {
     todos.push(newTodo);
     res.status(201).json(newTodo);
 });
-
 app.put('/todos/:id', (req, res) => {
     const { id } = req.params;
     const { title, description, completed } = req.body;
